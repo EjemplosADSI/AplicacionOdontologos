@@ -1,0 +1,11 @@
+CREATE VIEW citasvspaciente AS (SELECT * FROM citas, paciente WHERE citas.PACIENTE_idPACIENTE = paciente.idPACIENTE);
+
+CREATE VIEW citasvsodontologo AS (SELECT * FROM citas, odontologos WHERE citas.ODONTOLOGOS_idODONTOLOGOS = odontologos.idODONTOLOGOS);
+
+CREATE VIEW citasvsconsultorio AS (SELECT * FROM citas, consultorio WHERE citas.CONSULTORIO_idCONSULTORIO = consultorio.idCONSULTORIO);
+
+SELECT * FROM citas,paciente WHERE citas.PACIENTE_idPACIENTE = paciente.idPACIENTE AND paciente.NOMBRES LIKE '%Diego%'
+
+SELECT * FROM citas,odontologos WHERE citas.ODONTOLOGOS_idODONTOLOGOS = odontologos.idODONTOLOGOS AND odontologos.NOMBRES LIKE '%Homero%'
+
+SELECT * FROM citas,consultorio WHERE citas.CONSULTORIO_idCONSULTORIO = consultorio.idCONSULTORIO AND consultorio.NUMERODECONSULTORIO = 102

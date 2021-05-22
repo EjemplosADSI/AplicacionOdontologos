@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="11.45" multi-file="no" uid="simpd27d91c35a564d50a908b642c88e4db1">
+  <meta>
+    <name>Centro Odontologico</name>
+    <authors> Diego Alonso Ojeda Medina</authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="class" type="UmlClass" />
+        <value>5</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="" type="AbstractElementGroup" />
+        <value>126</value>
+      </counter>
+      <counter>
+        <item-type type-id="class" type="UmlClass" />
+        <value>6</value>
+      </counter>
+      <counter>
+        <item-type type-id="universal-connector" type="UniversalConnector" />
+        <value>12</value>
+      </counter>
+      <counter>
+        <item-type type-id="dependency" type="UmlDependency" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="relationship" type="UmlAssociation" />
+        <value>7</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.AttributeField</type>
+        <value>25</value>
+      </counter>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
+        <value>26</value>
+      </counter>
+    </fields>
+  </counters>
+  <alias-groups />
+  <management uid="md-83b41e730a18479fbceafaec92c14cfa" name="" task-id-sequence="0">
+    <persons>
+      <person id="Pf78eb4a6142846618af37962ad03a2c1">
+        <first-name>Diego Alonso Ojeda</first-name>
+        <last-name>Medina</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-bee3dd0090bf4fafbcfad3baa41b0c91" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <type id="Class:di443550613940663537" tid="" name="Pacientes" description="" class-ref="di443550613940663537" />
+      <type id="DateTime (Uml.DateTime)" tid="" name="DateTime (Uml.DateTime)" description="" />
+      <type id="Class:di324650684631700956" tid="" name="Odontologos" description="" class-ref="di324650684631700956" />
+      <type id="Class:di962471422100507517" tid="" name="Consultorios" description="" class-ref="di962471422100507517" />
+      <type id="long" tid="" name="long" description="" />
+      <type id="double" tid="" name="double" description="" />
+    </custom-types>
+  </types>
+  <items />
+  <models>
+    <model id="pfe204394423c4832a2fb0b6611248313_521011896" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>09/19/2018 11:51:58</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-class" id="pe3190339bac342ae8cf15d09de426ebe_283050261" name="ClassDiagram1" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>09/19/2018 11:51:59</creation-date>
+          <change-date>09/19/2018 14:20:09</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="di789515887359293518" cid="C001" type="class" name="Citas" style-class="Blue Outline" visibility="package" change-tracking-state="added" creator="Pf78eb4a6142846618af37962ad03a2c1" creation-date="09/19/2018 11:52:03">
+            <style class="Blue Outline" />
+            <attributes>
+              <attribute id="ad2719fef108144b99e8dbcc7d7d744af740" cid="ELEM001" name="Fecha" creation-date="01/01/0001 00:00:00" type="DateTime" type-id="Uml.DateTime" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-2fbfffc0-607d-4d44-9b11-68ad1b1b4410" />
+                </source-codes>
+              </attribute>
+              <attribute id="ac5efcbb1ee1046b79ebbaa0c14becc9d348" cid="ELEM002" name="Hora_Inicio" creation-date="01/01/0001 00:00:00" type="String" type-id="Uml.String" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-b4e53c5e-7499-43e8-8c78-cd6771508585" />
+                </source-codes>
+              </attribute>
+              <attribute id="a78edd20fa4fc4208ae81b602d703a3f3552" cid="ELEM003" name="Hora_Fin" creation-date="01/01/0001 00:00:00" type="String" type-id="Uml.String" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-bda2cd56-adbb-4f34-89b2-4fdb671c399f" />
+                </source-codes>
+              </attribute>
+              <attribute id="a45179fcfc727445c8d9fc86b0fc5b299651" cid="ELEM004" name="Tratamiento" creation-date="01/01/0001 00:00:00" type="String" type-id="Uml.String" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-6eb91f62-2ef1-4cc3-8db5-03f5caef2fb4" />
+                </source-codes>
+              </attribute>
+              <attribute id="a8ada26f1b0d04f1ea87b2b40d1a5dbb3781" cid="ELEM005" name="paciente" creation-date="01/01/0001 00:00:00" type="Pacientes" type-id="Class:di443550613940663537" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-4a639c8e-6b48-400d-a6a7-8c3a39a93abf" />
+                </source-codes>
+              </attribute>
+              <attribute id="a088115dd86ab437687e3ac7e3cd26f1c538" cid="ELEM006" name="odontologo" creation-date="01/01/0001 00:00:00" type="Odontologos" type-id="Class:di324650684631700956" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-4de5466a-1c88-46cc-8e34-b9a4dbd3c4ff" />
+                </source-codes>
+              </attribute>
+              <attribute id="ad84c16641bd94e28b23371989f0bf51d79" cid="ELEM007" name="consultorio" creation-date="01/01/0001 00:00:00" type="Consultorios" type-id="Class:di962471422100507517" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-d76cb179-7ee2-4bb7-b7e4-9843d20235d8" />
+                </source-codes>
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o33d7540fb6ce4a1d9939ef9191a1250e291" cid="ELEM025" name="Citas" creation-date="01/01/0001 00:00:00" type="" type-id="" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p224bdf118e264a55b87ab951c619a1cc" name="Fecha" type="DateTime" type-id="Uml.DateTime" />
+                  <parameter id="p9fe690cc3d0b4480a14203194f6a59d6" name="Hora_Inicio" type="String" type-id="Uml.String" />
+                  <parameter id="pd0128dae867a464ebd642217beb7811a" name="Hora_Fin" type="String" type-id="Uml.String" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="di962471422100507517" cid="C002" type="class" name="Consultorios" style-class="" visibility="package" change-tracking-state="added" creator="Pf78eb4a6142846618af37962ad03a2c1" creation-date="09/19/2018 11:52:21">
+            <style class="default" />
+            <attributes>
+              <attribute id="a87317c377b7240588f52f95ab4a6907b724" cid="ELEM008" name="N_Consultorio" creation-date="01/01/0001 00:00:00" type="Integer" type-id="Uml.Integer" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-7ad06bdd-f5e0-4397-83b9-a4be0afa9528" />
+                </source-codes>
+              </attribute>
+              <attribute id="ab4647439e3274aba8d3c5e7073b31d0e808" cid="ELEM009" name="Piso" creation-date="01/01/0001 00:00:00" type="Integer" type-id="Uml.Integer" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-93a99555-fe2f-4bc4-868a-fe1466071fb0" />
+                </source-codes>
+              </attribute>
+              <attribute id="a673de74621bd4ad0bc1558a0b8745d13474" cid="ELEM010" name="Disponibilidad" creation-date="01/01/0001 00:00:00" type="String" type-id="Uml.String" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-e1507954-f644-4c32-b15f-323be7ec2f84" />
+                </source-codes>
+              </attribute>
+            </attributes>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="di324650684631700956" cid="C003" type="class" name="Odontologos" style-class="" visibility="package" change-tracking-state="added" creator="Pf78eb4a6142846618af37962ad03a2c1" creation-date="09/19/2018 11:52:30">
+            <style class="default" />
+            <attributes>
+              <attribute id="ad0aaba9561fc4e83a98065f6f021e802452" cid="ELEM017" name="Nombres" creation-date="01/01/0001 00:00:00" type="String" type-id="Uml.String" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-9afe7209-d1dc-4104-8786-4b488b87d4f6" />
+                </source-codes>
+              </attribute>
+              <attribute id="af8122f5ee02a44f18e690fb530b766ad862" cid="ELEM018" name="Apellidos" creation-date="01/01/0001 00:00:00" type="String" type-id="Uml.String" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-afc640e7-560a-448a-a90d-ab9c831c2dcd" />
+                </source-codes>
+              </attribute>
+              <attribute id="a5ac071c3de1a490ebcbb3c5e8ec06f38286" cid="ELEM019" name="N_Documento" creation-date="01/01/0001 00:00:00" type="long" type-id="long" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-f52503d1-c54f-4e38-93df-bf6e4ff6a804" />
+                </source-codes>
+              </attribute>
+              <attribute id="a27d4209e02294476b3380f8838768e8b156" cid="ELEM020" name="Telefono" creation-date="01/01/0001 00:00:00" type="long" type-id="long" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-363d5c7a-0ec6-4599-a4d5-01491b523568" />
+                </source-codes>
+              </attribute>
+              <attribute id="a21c1f54429bc484b9070b00ae3ec9cfd645" cid="ELEM021" name="Correo" creation-date="01/01/0001 00:00:00" type="String" type-id="Uml.String" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-08afd91e-4156-4553-983a-8d73d6630aeb" />
+                </source-codes>
+              </attribute>
+              <attribute id="a1a98e543e5b64b338a0d726e072e5f76248" cid="ELEM022" name="Direccion" creation-date="01/01/0001 00:00:00" type="String" type-id="Uml.String" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-96015f3f-7c54-4b21-8a8b-a981d70ecf64" />
+                </source-codes>
+              </attribute>
+              <attribute id="a74d1dd607bc54078a7d32bb9f32f715a370" cid="ELEM023" name="Tiempo_Experiencia" creation-date="01/01/0001 00:00:00" type="Integer" type-id="Uml.Integer" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-f8d0950b-3e6b-4d21-9e42-e0ab069e8136" />
+                </source-codes>
+              </attribute>
+              <attribute id="a723122172e714ed4bbc59bd4dbd1a618876" cid="ELEM024" name="Salario" creation-date="01/01/0001 00:00:00" type="double" type-id="double" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-bea6c8fd-5105-408a-ba2d-505e44c443b4" />
+                </source-codes>
+              </attribute>
+            </attributes>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="di443550613940663537" cid="C004" type="class" name="Pacientes" style-class="" visibility="package" change-tracking-state="added" creator="Pf78eb4a6142846618af37962ad03a2c1" creation-date="09/19/2018 11:52:44">
+            <style class="default" />
+            <attributes>
+              <attribute id="a88d4f2800d8a41c2bab9bcb0d0443498161" cid="ELEM011" name="Nombres" creation-date="01/01/0001 00:00:00" type="String" type-id="Uml.String" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-2ac58d75-356c-49a6-9534-e79641f0c0cf" />
+                </source-codes>
+              </attribute>
+              <attribute id="a4cadd59109fe4cd79703af9342d6264d666" cid="ELEM012" name="Apellidos" creation-date="01/01/0001 00:00:00" type="String" type-id="Uml.String" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-7df62d00-3aad-4ea7-83ad-7648e7db0a26" />
+                </source-codes>
+              </attribute>
+              <attribute id="abe09727f9f54457ca3475ce0a3449f8d604" cid="ELEM013" name="N_Documento" creation-date="01/01/0001 00:00:00" type="long" type-id="long" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-ac68f03f-4069-4df2-9d63-2e10f103d5cb" />
+                </source-codes>
+              </attribute>
+              <attribute id="ac44f1ac04f7f459990103c8580ba1d8e82" cid="ELEM014" name="Telefono" creation-date="01/01/0001 00:00:00" type="long" type-id="long" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-4bef96f8-152f-49ac-87f6-7a200de957ed" />
+                </source-codes>
+              </attribute>
+              <attribute id="a9b3f1a77f63c4e3fa41c5f9ec6c2ed34845" cid="ELEM015" name="Correo" creation-date="01/01/0001 00:00:00" type="String" type-id="Uml.String" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-446fe37d-62e1-4c09-bba1-f94ec37e7ab8" />
+                </source-codes>
+              </attribute>
+              <attribute id="af51debd8b951453ba8aa144335817ea6806" cid="ELEM016" name="Direccion" creation-date="01/01/0001 00:00:00" type="String" type-id="Uml.String" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" uid="scs-842a13fa-3a2d-4d36-bbc0-c936f36dae22" />
+                </source-codes>
+              </attribute>
+            </attributes>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="di975895870425799647" cid="REL004" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="Pf78eb4a6142846618af37962ad03a2c1" creation-date="09/19/2018 14:19:27" from="di789515887359293518" to="di962471422100507517">
+            <style class="default" />
+            <relation from="di789515887359293518" to="di962471422100507517">
+              <start-role id="umlar-b94bf89f-0a16-49a4-93ef-3a4521ad2f06" name="" navigability="" association-type="composition" visibility="private" />
+              <end-role id="umlar-85b82265-432f-4350-9a03-539bcdcd03dc" name="" navigability="" association-type="association" visibility="private" />
+            </relation>
+          </item>
+          <item id="di815138162797325806" cid="REL005" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="Pf78eb4a6142846618af37962ad03a2c1" creation-date="09/19/2018 14:19:39" from="di789515887359293518" to="di443550613940663537">
+            <style class="default" />
+            <relation from="di789515887359293518" to="di443550613940663537">
+              <start-role id="umlar-539a317d-7054-4867-892b-5bbc1add9911" name="" navigability="" association-type="composition" visibility="private" />
+              <end-role id="umlar-830d6099-3608-4f63-847c-64d9e2246528" name="" navigability="" association-type="association" visibility="private" />
+            </relation>
+          </item>
+          <item id="di645726171907582171" cid="REL006" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creator="Pf78eb4a6142846618af37962ad03a2c1" creation-date="09/19/2018 14:20:09" from="di789515887359293518" to="di324650684631700956">
+            <style class="default" />
+            <relation from="di789515887359293518" to="di324650684631700956">
+              <start-role id="umlar-edb1f4a3-b3aa-4a60-82d2-df901aa7d786" name="" navigability="" association-type="composition" visibility="private" />
+              <end-role id="umlar-d28c418b-e9d9-43e6-90ea-a9a1b1d7d490" name="" navigability="" association-type="association" visibility="private" />
+            </relation>
+          </item>
+        </abstract-items>
+        <layer id="322704e3c5f54c5c8594963ca300412d" name="Default" visible="true" enabled="true" locked="false">
+          <item id="di789515887359293518" iid="6550f86361214c3d8934e2cb5addd782" name-style="" creation-date="09/19/2018 11:52:03" order-index="0" type="entity">
+            <layout ax="486" ay="143.5" awidth="311" aheight="199" x="486" y="143.5" width="311" height="199" />
+            <class />
+          </item>
+          <item id="di962471422100507517" iid="5221d6e16a7d40d6b45f7bc74a7f981b" name-style="" creation-date="09/19/2018 11:52:21" order-index="1" type="entity">
+            <layout ax="111" ay="83" awidth="173" aheight="111" x="111" y="83" width="173" height="111" />
+            <class />
+          </item>
+          <item id="di324650684631700956" iid="a567596125d34694baf65595d820e4f3" name-style="" creation-date="09/19/2018 11:52:30" order-index="2" type="entity">
+            <layout ax="927" ay="150.5" awidth="197" aheight="185" x="927" y="150.5" width="197" height="185" />
+            <class />
+          </item>
+          <item id="di443550613940663537" iid="ee405bffdd3a453db3cd05fda329aabc" name-style="" creation-date="09/19/2018 11:52:44" order-index="3" type="entity">
+            <layout ax="111" ay="258" awidth="173" aheight="160" x="111" y="258" width="173" height="160" />
+            <class />
+          </item>
+          <item id="di975895870425799647" iid="42ccc277379a430883fbf5348272add5" name-style="" creation-date="09/19/2018 14:19:27" order-index="4" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="486" y1="202" x2="284" y2="194" start-border-pos="0.926507532596588" end-border-pos="0.5" name-position="0,0">
+              <points>
+                <point x="486" y="202" />
+                <point x="284" y="194" />
+              </points>
+            </layout>
+            <relation from="di789515887359293518" from-iid="6550f86361214c3d8934e2cb5addd782" to="di962471422100507517" to-iid="5221d6e16a7d40d6b45f7bc74a7f981b" />
+          </item>
+          <item id="di815138162797325806" iid="f9e1de72d9c94ecaac5c4e8df72db22f" name-style="" creation-date="09/19/2018 14:19:39" order-index="5" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="486" y1="297" x2="284" y2="338" start-border-pos="0.807160802185535" end-border-pos="0.375" name-position="0,0">
+              <points>
+                <point x="486" y="297" />
+                <point x="284" y="338" />
+              </points>
+            </layout>
+            <relation from="di789515887359293518" from-iid="6550f86361214c3d8934e2cb5addd782" to="di443550613940663537" to-iid="ee405bffdd3a453db3cd05fda329aabc" />
+          </item>
+          <item id="di645726171907582171" iid="ce2c0094a88e492193214b59950bcd8f" name-style="" creation-date="09/19/2018 14:20:09" order-index="6" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="797" y1="243" x2="927" y2="243" start-border-pos="0.375" end-border-pos="0.874324324324324" name-position="0,0">
+              <points>
+                <point x="797" y="243" />
+                <point x="927" y="243" />
+              </points>
+            </layout>
+            <relation from="di789515887359293518" from-iid="6550f86361214c3d8934e2cb5addd782" to="di324650684631700956" to-iid="a567596125d34694baf65595d820e4f3" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>
